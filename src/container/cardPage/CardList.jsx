@@ -144,14 +144,14 @@ function CardList() {
             </button>
           </div>
         )}
-        <div className="w-full flex flex-col md:flex-row border-b-2  justify-between pb-2 border-neutral-200">
+        <div className="w-full flex flex-col md:flex-row border-b-2 gap-2 justify-between pb-2 border-neutral-200">
           <h1 className="text-2xl font-bold">Card List</h1>
           <input
             type="search"
             name="search"
             id="search"
             placeholder="Search..."
-            className="border border-gray-300/50 p-2 px-5 rounded-lg w-1/3 focus:outline-2 focus:outline-violet-600/50 hover:shadow-md transition-shadow duration-300 shadow-violet-500/20 hover:border-violet-600/50  focus:bg-neutral-200/50"
+            className="border border-gray-300/50 p-2 px-5 rounded-lg w-full md:w-1/3 focus:outline-2 focus:outline-violet-600/50 hover:shadow-md transition-shadow duration-300 shadow-violet-500/20 hover:border-violet-600/50  focus:bg-neutral-200/50"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
