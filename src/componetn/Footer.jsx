@@ -10,7 +10,7 @@ function Footer() {
   return (
     <>
       <footer className="flex flex-col w-full px-5 py-6 text-white gap-y-3 bg-gradient-to-r from-violet-600 to-violet-800 md:px-5 lg:px-25 ">
-        <div className="flex flex-col md:flex-row md:justify-between gap-y-4">
+        <div className="flex flex-col items-center md:flex-row md:justify-between gap-y-4">
           <div className="flex flex-col ">
             <h1 className="text-2xl font-bold">Tuwaiq Homework</h1>
             <p className="pl-1.5 text-sm md:text-base text-neutral-200 w-3/4 md:w-1/2">

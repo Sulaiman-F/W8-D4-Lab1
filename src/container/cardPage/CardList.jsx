@@ -32,7 +32,6 @@ function CardList() {
       try {
         const response = await axios.get(API);
         setCards(response.data);
-        // Filter cards based on search term
         if (searchTerm) {
           const results = response.data.filter((card) =>
             card.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -59,8 +58,9 @@ function CardList() {
     }
     try {
       const response = await axios.post(API, newCard);
-      // now prevCards is always an array
-      setCards((prev) => [...prev, response.data]);
+      const added = response.data;
+      setCards((prev) => [...prev, added]);
+      setSearchResults((prev) => [...prev, added]);
       setSuccess("Homework added successfully!");
       setNewCard({ title: "", description: "", date: "" });
       setTimeout(() => setSuccess(""), 1500);
