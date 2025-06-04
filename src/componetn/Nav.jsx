@@ -26,7 +26,7 @@ function Nav() {
       <nav className="flex justify-between  items-center h-13 lg:h-16 text-white bg-gradient-to-r from-violet-600 to-violet-800  w-full fixed px-5 md:px-5 lg:px-25 py-1.5 shadow-md z-50">
         <div className="flex h-full  items-center ">
           <img
-            className="h-full w-10 lg:w-35 object-cover p-1 bg-white rounded-2xl shadow-md"
+            className="h-full w-35 lg:w-40 object-cover p-1 bg-white rounded-2xl shadow-md"
             src="https://sadasaudi.net/wp-content/uploads/2024/10/logo-h-scaled.webp"
             alt=""
           />
